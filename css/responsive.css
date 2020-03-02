@@ -48,9 +48,8 @@
 	p { font-size: 14px; line-height: 20px; }
 
 	/* HEADINGS */
-	h2 {
-	    font-size: 50px;
-	}
+	h1 { font-size: 40px; }
+	h2 { font-size: 50px; }
 
 	/* Header */
 	header .container { background-image: url(../img/bg_header_tablet.png); height: 480px; }
@@ -60,15 +59,18 @@
         .navbar ul { padding-top: 20px; }
             .navbar li { margin-right: 0; padding: 0; }
             	.navbar li a { font-size: 16px; padding: 15px 0 !important; }
+            	.navbar li .btn { margin-bottom: 20px; }
 
     .navbar a.navbar-brand { display: flex; margin-right: 30px; }
     	.navbar a.navbar-brand img { height: 46px; }
 
 		.slogan { padding-top: 70px; }
-        	.slogan p { font-size: 18px; line-height: 28px; }
+        	.slogan p { font-size: 16px; line-height: 22px; }
 
 	/* How it Works */
 	#howitworks h2 { font-size: 24px; height: 120px; width: 120px; }
+		#howitworks ul li img { height: 30px; }
+		#howitworks ul li h3 { font-size: 30px; line-height: 30px; }
 
 	/* Why ScaleMonk */
 	#whyscalemonk .container { height: 460px; }
@@ -107,51 +109,54 @@
 @media (max-width: 767px) {
 
 	/* THEME */
-	body { background-size: 540px; font-size: 12px; }
+	body { font-size: 12px; }
 
-	p { font-size: 17px; line-height: 28px; }
+	p { font-size: 13px; line-height: 20px; }
 
 	/* HEADINGS */
 	h1 { font-size: 32px; }
-	h2 { font-size: 42px; }
-	h3 { font-size: 35px; }
+	h2 { font-size: 32px; }
+	h3 { font-size: 28px; }
 
 	/* Header */
 	header .container { height: 360px; }
 		.navbar,
 		.navbar.scrolled { margin-left: 0; position: fixed; width: 540px; }
-		.slogan p { font-size: 14px; line-height: 20px; }
+		.slogan { }
+		.slogan p { font-size: 12px; line-height: 18px; }
 
 	/* How it Works */
+	#howitworks { top: -47px; padding-top: 47px; }
 	#howitworks h2 { font-size: 17px; height: 90px; line-height: 19px; width: 90px; }
-	#howitworks ul { padding: 44px 0; }
-		#howitworks ul li { padding-top: 30px; }
-			#howitworks ul li h3 { line-height: 40px; margin-bottom: 10px; }
-			#howitworks ul li img { height: 40px; }
+	#howitworks ul { }
 
 	/* Why ScaleMonk */
-	#whyscalemonk .container { height: 540px; }
-		#whyscalemonk p { font-size: 20px; }
+	#whyscalemonk { top: -47px; padding-top: 47px; }
+	#whyscalemonk .container { height: 378px; }
+		#whyscalemonk p { font-size: 16px; }
 
 	/* Partnerships */
-	#partnerships .container { height: 360px; }
-		#partnerships h2 { font-size: 34px; padding-top: 125px; }
+	#partnerships { top: -47px; padding-top: 47px; padding-bottom: 0; }
+	#partnerships .container { height: 410px; }
+		#partnerships h2 { font-size: 34px; padding-top: 50px; }
 		#partnerships .slick div img { max-width: 90px; }
 
-	/* Testimonials */
-	#testimonials .container { padding-bottom: 90px; }
-		#testimonials .slick2 div p { font-size: 14px; line-height: 20px; padding-left: 20px; }
-		#testimonials .slick2 div span { font-size: 12px; padding-left: 20px; }
-		#testimonials .slick-dots { padding-left: 20px; }
+		#partnerships .testimonials { padding-top: 40px; }
+		#partnerships .square { height: 178px; }
+
+		#partnerships .slick2 div p { font-size: 14px; line-height: 20px; padding-left: 20px; }
+		#partnerships .slick2 div span { font-size: 12px; padding-left: 20px; }
+		#partnerships .slick-dots { padding-left: 20px; }
 
 	/* FAQ */
-	#faq .container { height: 360px; }
-		#faq h2 { line-height: 31px; margin-bottom: 4px; }
-		#faq #accordion .card-header button { font-size: 18px; padding: 15px 30px 15px 0; }		
+	#faq { padding-top: 20px; }
+	#faq .container { height: 180px; }
+		#faq h2 { line-height: 26px; margin-bottom: 4px; }
+		#faq #accordion .card-header button { font-size: 12px; padding: 7px 30px 7px 0; }		
 		#faq #accordion .card-body p { padding: 10px 0 0 0; }	
 
 	/* Careers */
-	#careers .container { height: 270px; }
+	#careers .container { height: 180px; }
 		#careers p { margin-bottom: 15px; }
 		#careers a.btn { font-size: 17px; padding: 5px 30px; }
 
@@ -168,9 +173,9 @@
 	.modal p { font-size: 14px; line-height: 22px; }
 
 	/* THEME */
-	body{ background-image: url(../img/grid_mobile.svg); background-size: 360px; margin: auto; width: 360px; }
+	body{ margin: auto; width: 360px; }
 
-	p { font-size: 17px; line-height: 28px; }
+	p { font-size: 13px; line-height: 22px; }
 
 	/* HEADINGS */
 	h1 { font-size: 44px; }
@@ -178,44 +183,50 @@
 	h3 { font-size: 35px; }
 
 	/* Header */
-	header .container { background-image: none; height: auto; }
+	header .container { background-image: url(../img/bg_header_mobile.png); height: 598px; }
+	header .container .h-100 { height: 330px !important; }
 
-		.navbar { padding: 7px 0; width: 100%; }
-			.navbar ul { padding-bottom: 7px; }
-		header .logo.mobile { display: block !important; }
+		.navbar,
+		.navbar.scrolled { margin-left: 0; position: fixed; width: 360px; }
+		.navbar li a {}
 
-	/* Slogan */
-	#slogan .container { align-items: center; background-image: url(../img/bg_slogan_mobile.svg); display: flex; height: 280px; }
+		header .container .slogan p { font-size: 18px; line-height: 26px; }
 
 	/* How it Works */
 	#howitworks .container { background-image: url(../img/bg_howitworks_mobile.svg); height: auto; }
 	#howitworks .container .row.justify-content-center { justify-content: start!important; }
-	#howitworks ul { padding: 45px 0; }
+	#howitworks h2 { font-size: 21px; height: 120px; line-height: 19px; width: 120px; }
+	#howitworks ul { padding: 30px 0 0; }
 
 	/* Why ScaleMonk */
-	#whyscalemonk .container { background-image: url(../img/bg_whyscalemonk_mobile.png); height: auto; padding-bottom: 53px; padding-top: 180px; }
+	#whyscalemonk { top: 0; padding-top: 0; }
+	#whyscalemonk .container { background-image: url(../img/bg_whyscalemonk_mobile.png); height: auto; padding-bottom: 60px; padding-top: 130px; }
 
 	/* Partnerships */
-	#partnerships .container { background-image: url(../img/bg_partnerships_mobile.svg); height: 360px; }
-		#partnerships h2 { padding-top: 70px; }
+	#partnerships { top: 0; padding-top: 0; }
+	#partnerships .container { background-position: left -304px; height: 710px; }
+		#partnerships h2 {  }
+		#partnerships .square { width: 178px; }
 		#partnerships .slick div img { max-width: 120px; }
 
+		#partnerships .slick2 div p { font-size: 18px; line-height: 20px; padding-left: 0; padding-top: 41px; }
+		#partnerships .slick2 div span { font-size: 14px; padding-left: 0; }
+		#partnerships .slick2 .slick-dotted.slick-slider { margin-bottom: 15px; }
+		#partnerships .slick-dots { padding-left: 0; }
 	/* Testimonials */
-	#testimonials .container { background-image: url(../img/bg_testimonials_mobile.svg); padding-bottom: 120px; }
-		#testimonials .slick2 div p { font-size: 18px; line-height: 20px; padding-left: 0; padding-top: 41px; }
-		#testimonials .slick2 div span { font-size: 14px; padding-left: 0; }
-		#testimonials .slick2 .slick-dotted.slick-slider { margin-bottom: 15px; }
-		#testimonials .slick-dots { padding-left: 0; }
+	/*#testimonials .container { background-image: url(../img/bg_testimonials_mobile.svg); padding-bottom: 120px; }*/
+		
 
 	/* FAQ */
-	#faq .container { background-image: url(../img/bg_faq_mobile.svg); height: 360px; }
+	#faq {  }
+	#faq .container { background-image: url(../img/bg_faq_mobile.svg); height: 286px; }
 		#faq .container .row.justify-content-center { justify-content: start!important; }
-		#faq h2 { line-height: 24px; margin-bottom: 30px; }
+		#faq h2 { line-height: 24px; margin-bottom: 10px; }
 		#faq #accordion .card-header button { font-size: 18px; padding: 15px 30px 15px 0; }		
 		#faq #accordion .card-body p { padding: 10px 0 0 0; }	
 
 	/* Careers */
-	#careers .container { background-image: url(../img/bg_careers_mobile.svg); height: 360px; }
+	#careers .container { background-image: url(../img/bg_careers_mobile.svg); background-position: bottom; height: 285px; }
 		#careers p { margin-bottom: 15px; }
 		#careers a.btn { font-size: 17px; padding: 5px 30px; }
 
