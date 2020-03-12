@@ -2,15 +2,19 @@
 
 	/* Header */
 	header .container { height: 640px; }
+	body.inner header .container { height: 250px; }
+		body.inner .slogan h1 { font-size: 50px; }
 
 		.navbar { margin-left: 230px; width: 730px; }
 	        .navbar li { margin-right: 24px; }
 	        .navbar li a.btn { padding: 6px 20px !important }
+	    body.inner .navbar,
 	    .navbar.scrolled { width: 960px; }
         	.navbar.scrolled a.navbar-brand img { height: 46px; }
 
 		.slogan {}
         	.slogan p { font-size: 22px; }
+        
 
 	/* How it Works */
 	#howitworks h2 { font-size: 30px; height: 160px; width: 160px; }
@@ -53,8 +57,11 @@
 
 	/* Header */
 	header .container { background-image: url(../img/bg_header_tablet.png); height: 480px; }
+	body.inner header .container { height: 200px; }
+		body.inner .slogan h1 { font-size: 42px; }
 
 	.navbar,
+	body.inner .navbar,
 	.navbar.scrolled { margin-left: 0; position: fixed; width: 720px; }
         .navbar ul { padding-top: 20px; }
             .navbar li { margin-right: 0; padding: 0; }
@@ -64,7 +71,7 @@
     .navbar a.navbar-brand { display: flex; margin-right: 30px; }
     	.navbar a.navbar-brand img { height: 46px; }
 
-		.slogan { padding-top: 70px; }
+		.slogan { padding-top: 50px; }
         	.slogan p { font-size: 16px; line-height: 22px; }
 
 	/* How it Works */
@@ -118,9 +125,21 @@
 	h2 { font-size: 32px; }
 	h3 { font-size: 28px; }
 
+	body.inner section h2 { font-size: 24px; }
+	body.inner section h3 { font-size: 24px; }
+
+	body.inner section { margin-bottom: 10px; }
+
+	body.inner section p,
+	body.inner section ul li { font-size: 12px; }
+	body.inner section ul li { padding-bottom: 10px; }
+
 	/* Header */
 	header .container { height: 360px; }
+	body.inner header .container { height: 150px; }
+	body.inner .slogan h1 { font-size: 30px; }
 		.navbar,
+		body.inner .navbar,
 		.navbar.scrolled { margin-left: 0; position: fixed; width: 540px; }
 		.slogan { }
 		.slogan p { font-size: 12px; line-height: 18px; }
@@ -184,9 +203,13 @@
 
 	/* Header */
 	header .container { background-image: url(../img/bg_header_mobile.png); height: 648px; background-position: center 50px; }
-	header .container .h-100 { height: 330px !important; }
+		header .container .h-100 { height: 400px !important; }
+	body.inner header .container { background-image: url(../img/bg_header_inner_mobile.png); background-size: auto 250px; background-position: top right; height: auto; }
+		body.inner header .container .h-100 { height: 100% !important; }
+		body.inner header .container .h-100 .slogan { padding: 100px 0 40px; }
 
 		.navbar,
+		body.inner .navbar,
 		.navbar.scrolled { margin-left: 0; position: fixed; width: 360px; }
 		.navbar li a {}
 
@@ -235,5 +258,6 @@
 		footer .logo { display: none; }
 		footer .logo.mobile { display: block !important; }
 		footer ul { text-align: right; }
+		footer ul li a.btn { margin-top: 3px; padding: 3px 10px; }
 
 }

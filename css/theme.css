@@ -42,7 +42,7 @@ body {
 }
 
 a {
-    color: #0096ff;
+    color: #ff3c4b;
     -webkit-transition: all ease 0.25s;
             transition: all ease 0.25s;
 }
@@ -77,6 +77,67 @@ h3 {
     line-height: 100%;
 }
 
+body.inner h1 {
+    line-height: 100%;
+}
+body.inner section h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+body.inner section h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+body.inner section p {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+body.inner section ul {
+    margin-bottom: 10px;
+}
+body.inner section div > ul {
+    padding-left: 0;
+}
+    body.inner section ul ul {
+        margin-bottom: 0;
+    }
+    body.inner section ul li {
+        font-size: 16px;
+        line-height: 140%;
+        list-style: none;
+        padding-bottom: 15px 
+    }
+    body.inner section ul li strong {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+body.inner section {
+    margin-bottom: 30px;
+}
+body.inner section form {
+    border: 1px solid #ff3c4b;
+    padding: 20px;
+}
+    body.inner section form legend {
+        font-size: 16px;
+        font-weight: bold;
+    }
+body.inner section table {
+    border: 1px solid #ffffff33;
+    margin: 20px 0;
+}
+    body.inner section table th,
+    body.inner section table td {
+        padding: 10px;
+        width: 50%;
+        border-top: 1px solid #ffffff33;
+        border-left: 1px solid #ffffff33;
+    }
+    body.inner section table th {
+        font-size: 16px;
+    }
+
 /* BUTTONS */
 .btn {
     background-color: #ff3c4b;
@@ -109,6 +170,7 @@ h3 {
 
 /* Header */
 header .container { background: url(../img/bg_header.png) no-repeat right top; background-size: 100%; height: 760px; }
+body.inner header .container { background-image: url(../img/bg_header_inner.png); background-size: auto 100%; height: 300px; margin-bottom: 30px; }
 
     .navbar { background: #000000dd; border-bottom: 1px solid #ffffff; margin-left: 285px; padding: 0; width: 855px; z-index: 100; }
         .navbar a.navbar-brand { display: none; margin: 0; padding: 0 }
@@ -124,7 +186,10 @@ header .container { background: url(../img/bg_header.png) no-repeat right top; b
                 .navbar li a:hover { color: #ff3c4b; }
         .navbar a.btn { font-size: 16px; padding: 6px 30px !important; }
         .navbar a.btn:hover { color: #ffffff; }
+    body.inner .navbar,
     .navbar.scrolled { margin-left: 0; position: fixed; width: 1140px; }
+
+        body.inner .navbar a.navbar-brand,
         .navbar.scrolled a.navbar-brand { display: flex; margin-right: 30px; }
 
     .navbar.scrolled { animation-fill-mode:forwards; animation-duration: 1s; animation-name: fadeIn; }
@@ -135,6 +200,7 @@ header .container { background: url(../img/bg_header.png) no-repeat right top; b
 
     .slogan { padding: 20px 30px 0 0; }
         .slogan p { font-size: 26px; line-height: 150%; }
+    body.inner .slogan { padding-top: 64px; }
 
     /*    header .logo.mobile img { display: block; height: auto; width: 100%; }*/
 
@@ -207,9 +273,11 @@ header .container { background: url(../img/bg_header.png) no-repeat right top; b
 
 /* Footer */
 footer .container { background: url(../img/bg_footer.svg) no-repeat left top; background-size: 100% auto; border-top: 1px solid #fff; height: 190px; }
+body.inner footer .container {  }
     
     footer .logo { width: 100%; }
     footer .row div:last-child { display: flex; align-items: center; justify-content: flex-end; }
         footer ul { margin: 0; }
             footer ul li { display: inline-block; margin-left: 2vw; }
-                footer ul li  a { color: #fff; font-family: 'telegrafultrabold', sans-serif; }
+                footer ul li a { color: #fff; font-family: 'telegrafultrabold', sans-serif; }
+                footer ul li a.btn:hover { color: #fff; }
